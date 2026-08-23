@@ -15,8 +15,6 @@ app.use(express.json());
 app.use("/api/rsvp", rsvpRoutes);
 app.use("/api/messages", messageRoutes);
 
-const PORT = 3000;
-
 app.get("/", (req, res) => {
   res.send("Engagement Invitation API is running 💍❤️");
 });
@@ -28,8 +26,10 @@ mongoose
   .then(() => {
     console.log("MongoDB connected successfully ✅");
 
+    const PORT = process.env.PORT || 3000;
+
     app.listen(PORT, () => {
-      console.log(`Server running on http://localhost:${PORT}`);
+      console.log(`Server running on port ${PORT}`);
     });
   })
   .catch((error) => {
