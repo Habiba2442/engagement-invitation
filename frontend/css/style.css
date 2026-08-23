@@ -800,379 +800,611 @@ h1 {
   }
 }
 @media (max-width: 600px) {
+  .hero {
+    padding: 25px 15px;
+  }
 
-    .hero {
-        padding: 25px 15px;
-    }
+  .hero-content {
+    padding: 45px 20px;
+  }
 
+  .welcome-text {
+    font-size: 16px;
 
-    .hero-content {
-        padding: 45px 20px;
-    }
+    letter-spacing: 3px;
+  }
 
+  .invitation-text {
+    font-size: 17px;
+  }
 
-    .welcome-text {
-        font-size: 16px;
+  .couple-names {
+    font-size: 21px;
 
-        letter-spacing: 3px;
-    }
+    gap: 10px;
+  }
 
+  .date {
+    font-size: 21px;
+  }
 
-    .invitation-text {
-        font-size: 17px;
-    }
+  .countdown {
+    gap: 10px;
+  }
 
+  .time-box {
+    min-width: 72px;
 
-    .couple-names {
-        font-size: 21px;
+    padding: 15px 8px;
+  }
 
-        gap: 10px;
-    }
+  .time-box span {
+    font-size: 32px;
+  }
 
+  .time-box p {
+    font-size: 11px;
+  }
 
-    .date {
-        font-size: 21px;
-    }
+  .rsvp-form,
+  .message-form {
+    padding: 30px 20px;
+  }
 
+  .attendance-options {
+    flex-direction: column;
+  }
 
-    .countdown {
-        gap: 10px;
-    }
+  .flower {
+    font-size: 30px;
+  }
 
-
-    .time-box {
-        min-width: 72px;
-
-        padding: 15px 8px;
-    }
-
-
-    .time-box span {
-        font-size: 32px;
-    }
-
-
-    .time-box p {
-        font-size: 11px;
-    }
-
-
-    .rsvp-form,
-    .message-form {
-        padding: 30px 20px;
-    }
-
-
-    .attendance-options {
-        flex-direction: column;
-    }
-
-
-    .flower {
-        font-size: 30px;
-    }
-
-
-    .floating-heart {
-        font-size: 22px;
-    }
-
+  .floating-heart {
+    font-size: 22px;
+  }
 }
 /* =========================
    Opening Screen
 ========================= */
 
 .opening-screen {
-    position: fixed;
+  position: fixed;
 
-    inset: 0;
+  inset: 0;
 
-    z-index: 9999;
+  z-index: 9999;
 
-    display: flex;
+  display: flex;
 
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
-    padding: 30px;
+  padding: 30px;
 
-    background:
-        radial-gradient(
-            circle at top left,
-            rgba(183, 151, 103, 0.15),
-            transparent 35%
-        ),
-        radial-gradient(
-            circle at bottom right,
-            rgba(183, 151, 103, 0.12),
-            transparent 35%
-        ),
-        #fffdf8;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(183, 151, 103, 0.15),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(183, 151, 103, 0.12),
+      transparent 35%
+    ),
+    #fffdf8;
 
-    transition:
-        opacity 1s ease,
-        visibility 1s ease;
+  transition:
+    opacity 1s ease,
+    visibility 1s ease;
 }
-
 
 .opening-content {
-    width: min(600px, 100%);
+  width: min(600px, 100%);
 
-    text-align: center;
+  text-align: center;
 
-    animation: openingAppear 1.5s ease forwards;
+  animation: openingAppear 1.5s ease forwards;
 }
-
 
 .opening-small {
-    font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", serif;
 
-    font-size: 20px;
+  font-size: 20px;
 
-    letter-spacing: 5px;
+  letter-spacing: 5px;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    color: #9b7b55;
+  color: #9b7b55;
 
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
-
 
 .opening-content h1 {
-    display: flex;
+  display: flex;
 
-    flex-direction: column;
+  flex-direction: column;
 
-    align-items: center;
+  align-items: center;
 
-    gap: 3px;
+  gap: 3px;
 
-    font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", serif;
 
-    font-size: clamp(65px, 15vw, 110px);
+  font-size: clamp(65px, 15vw, 110px);
 
-    line-height: 0.8;
+  line-height: 0.8;
 
-    font-weight: 500;
+  font-weight: 500;
 
-    color: #4a3b32;
+  color: #4a3b32;
 }
-
 
 .opening-content h1 span {
-    font-size: 40px;
+  font-size: 40px;
 
-    color: #a7835c;
+  color: #a7835c;
 
-    line-height: 1.5;
+  line-height: 1.5;
 }
-
 
 .opening-divider {
-    display: flex;
+  display: flex;
 
-    justify-content: center;
+  justify-content: center;
 
-    align-items: center;
+  align-items: center;
 
-    gap: 15px;
+  gap: 15px;
 
-    margin: 35px auto 20px;
+  margin: 35px auto 20px;
 }
-
 
 .opening-divider::before,
 .opening-divider::after {
-    content: "";
+  content: "";
 
-    width: 70px;
+  width: 70px;
 
-    height: 1px;
+  height: 1px;
 
-    background: #b99b78;
+  background: #b99b78;
 }
-
 
 .opening-divider span {
-    color: #a7835c;
+  color: #a7835c;
 
-    font-size: 22px;
+  font-size: 22px;
 
-    animation: heartbeat 1.8s infinite;
+  animation: heartbeat 1.8s infinite;
 }
-
 
 .opening-subtitle {
-    font-family: "Cairo", sans-serif;
+  font-family: "Cairo", sans-serif;
 
-    font-size: 17px;
+  font-size: 17px;
 
-    letter-spacing: 3px;
+  letter-spacing: 3px;
 
-    color: #6d5a49;
+  color: #6d5a49;
 
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
-
 
 .open-invitation-btn {
-    padding: 14px 32px;
+  padding: 14px 32px;
 
-    border: 1px solid #a7835c;
+  border: 1px solid #a7835c;
 
-    border-radius: 50px;
+  border-radius: 50px;
 
-    background: transparent;
+  background: transparent;
 
-    color: #6d5136;
+  color: #6d5136;
 
-    font-family: "Cairo", sans-serif;
+  font-family: "Cairo", sans-serif;
 
-    font-size: 14px;
+  font-size: 14px;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition: 0.4s ease;
+  transition: 0.4s ease;
 }
-
 
 .open-invitation-btn:hover {
-    background: #a7835c;
+  background: #a7835c;
 
-    color: white;
+  color: white;
 
-    transform: translateY(-3px);
+  transform: translateY(-3px);
 
-    box-shadow:
-        0 10px 30px rgba(167, 131, 92, 0.2);
+  box-shadow: 0 10px 30px rgba(167, 131, 92, 0.2);
 }
-
 
 /* Opening animation */
 
 @keyframes openingAppear {
+  from {
+    opacity: 0;
 
-    from {
-        opacity: 0;
+    transform: translateY(25px);
+  }
 
-        transform: translateY(25px);
-    }
+  to {
+    opacity: 1;
 
-    to {
-        opacity: 1;
-
-        transform: translateY(0);
-    }
-
+    transform: translateY(0);
+  }
 }
-
 
 /* When invitation opens */
 
 .opening-screen.hide {
-    opacity: 0;
+  opacity: 0;
 
-    visibility: hidden;
+  visibility: hidden;
 
-    pointer-events: none;
+  pointer-events: none;
 }
 .reveal {
-    opacity: 0;
+  opacity: 0;
 
-    transform: translateY(50px);
+  transform: translateY(50px);
 
-    transition:
-        opacity 1s ease,
-        transform 1s ease;
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
 }
-
 
 .reveal.show {
-    opacity: 1;
+  opacity: 1;
 
-    transform: translateY(0);
+  transform: translateY(0);
 }
 .invitation-footer {
-    padding: 80px 20px 60px;
+  padding: 100px 20px;
 
-    text-align: center;
+  text-align: center;
 
-    background: #fffdf8;
+  background: rgba(255, 253, 248, 0.65);
 
-    border-top: 1px solid rgba(183, 151, 103, 0.2);
+  backdrop-filter: blur(6px);
+
+  border-top: 1px solid rgba(167, 131, 92, 0.2);
 }
-
-
-.footer-heart {
-    font-size: 30px;
-
-    color: #a7835c;
-
-    margin-bottom: 20px;
-
-    animation: heartbeat 2s infinite;
-}
-
 
 .invitation-footer h2 {
-    margin: 0 0 15px;
+  margin: 0 0 18px;
 
-    font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", serif;
 
-    font-size: 38px;
+  font-size: 42px;
 
-    font-weight: 500;
+  font-weight: 600;
 
-    color: #4a3b32;
+  color: #3f3026;
+
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.7);
 }
-
 
 .invitation-footer p {
-    max-width: 450px;
+  max-width: 500px;
 
-    margin: 0 auto 20px;
+  margin: 0 auto 20px;
 
-    font-family: "Cairo", sans-serif;
+  font-family: "Cairo", sans-serif;
 
-    font-size: 14px;
+  font-size: 15px;
 
-    line-height: 1.9;
+  font-weight: 500;
 
-    color: #6d5a49;
+  line-height: 1.9;
+
+  color: #4f4035;
+
+  text-shadow: 0 1px 5px rgba(255, 255, 255, 0.8);
 }
-
 
 .footer-date {
-    font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", serif;
 
-    font-size: 18px;
+  font-size: 18px;
 
-    letter-spacing: 4px;
+  letter-spacing: 4px;
 
-    color: #a7835c;
+  color: #a7835c;
 }
 
-
 @keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
 
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.15);
-    }
-
+  50% {
+    transform: scale(1.15);
+  }
 }
 .rsvp-btn:disabled,
 .message-btn:disabled {
-    opacity: 0.7;
+  opacity: 0.7;
 
-    cursor: not-allowed;
+  cursor: not-allowed;
 
-    transform: none;
+  transform: none;
 }
 
+/* ========================================
+   LUXURY INVITATION BACKGROUND
+======================================== */
 
+body {
+  margin: 0;
+
+  background: #f8f3ec;
+
+  color: #4a3b32;
+}
+
+body {
+  margin: 0;
+
+  color: #4a3b32;
+
+  background-image:
+    linear-gradient(rgba(250, 246, 240, 0.72), rgba(250, 246, 240, 0.72)),
+    url("../assets/images/hero-bg.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-attachment: fixed;
+
+  background-repeat: no-repeat;
+}
+/* ========================================
+   SECTIONS
+======================================== */
+
+.countdown-section,
+.rsvp-section,
+.guestbook-section {
+  background: transparent;
+}
+
+/* ========================================
+   COUNTDOWN
+======================================== */
+
+.countdown-section {
+  padding: 100px 20px;
+
+  text-align: center;
+}
+
+.countdown-section h2 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(38px, 6vw, 55px);
+
+  font-weight: 500;
+
+  letter-spacing: 1px;
+
+  color: #4a3b32;
+
+  margin-bottom: 45px;
+}
+
+.countdown {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 18px;
+}
+
+.time-box {
+  min-width: 100px;
+
+  padding: 25px 18px;
+
+  border: 1px solid rgba(167, 131, 92, 0.35);
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.48);
+
+  backdrop-filter: blur(8px);
+
+  box-shadow: 0 15px 40px rgba(75, 55, 40, 0.08);
+
+  transition: transform 0.4s ease;
+}
+
+.time-box:hover {
+  transform: translateY(-7px);
+}
+
+.time-box span {
+  display: block;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 48px;
+
+  font-weight: 500;
+
+  color: #8e6c49;
+}
+
+.time-box p {
+  margin: 5px 0 0;
+
+  font-family: "Cairo", sans-serif;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: #776555;
+}
+/* ========================================
+   RSVP
+======================================== */
+
+.rsvp-section {
+  padding: 100px 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+.rsvp-section h2 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(40px, 6vw, 58px);
+
+  font-weight: 500;
+
+  color: #4a3b32;
+
+  margin-bottom: 15px;
+}
+
+.rsvp-section > p {
+  max-width: 550px;
+
+  font-family: "Cairo", sans-serif;
+
+  color: #756556;
+
+  line-height: 1.9;
+
+  margin-bottom: 40px;
+}
+
+.rsvp-form {
+  width: min(520px, 100%);
+
+  padding: 45px;
+
+  box-sizing: border-box;
+
+  border: 1px solid rgba(167, 131, 92, 0.28);
+
+  border-radius: 24px;
+
+  background: rgba(255, 253, 248, 0.72);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 25px 60px rgba(60, 45, 35, 0.1);
+}
+/* ========================================
+   GUEST BOOK
+======================================== */
+
+.guestbook-section {
+  padding: 100px 20px;
+
+  text-align: center;
+}
+
+.guestbook-section h2 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(40px, 6vw, 58px);
+
+  font-weight: 500;
+
+  color: #4a3b32;
+
+  margin-bottom: 45px;
+}
+
+.message-card {
+  position: relative;
+
+  padding: 30px;
+
+  border: 1px solid rgba(167, 131, 92, 0.25);
+
+  border-radius: 20px;
+
+  background: rgba(255, 253, 248, 0.68);
+
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 15px 45px rgba(60, 45, 35, 0.08);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.message-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 25px 55px rgba(60, 45, 35, 0.12);
+}
+
+.message-card h4 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 25px;
+
+  font-weight: 600;
+
+  color: #8e6c49;
+
+  margin-bottom: 12px;
+}
+
+.message-card p {
+  font-family: "Cairo", sans-serif;
+
+  line-height: 1.9;
+
+  color: #5f5044;
+}
+@media (max-width: 600px) {
+  main {
+    background-attachment: scroll;
+  }
+
+  .countdown-section,
+  .rsvp-section,
+  .guestbook-section {
+    padding: 75px 16px;
+  }
+
+  .time-box {
+    min-width: 72px;
+
+    padding: 18px 10px;
+  }
+
+  .time-box span {
+    font-size: 36px;
+  }
+
+  .rsvp-form {
+    padding: 30px 20px;
+
+    border-radius: 20px;
+  }
+}
