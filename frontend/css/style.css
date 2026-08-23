@@ -1408,3 +1408,16 @@ body {
     border-radius: 20px;
   }
 }
+.made-by {
+  margin-top: 35px;
+
+  font-family: "Cairo", sans-serif;
+
+  font-size: 12px;
+
+  letter-spacing: 1px;
+
+  color: #8e6c49;
+
+  opacity: 0.85;
+}
