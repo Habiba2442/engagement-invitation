@@ -81,19 +81,22 @@ rsvpForm.addEventListener("submit", async (event) => {
   const rsvpMessage = document.getElementById("rsvpMessage");
 
   try {
-    const response = await fetch("http://localhost:3000/api/rsvp", {
-      method: "POST",
+    const response = await fetch(
+      "https://engagement-invitation-production.up.railway.app/api/rsvp",
+      {
+        method: "POST",
 
-      headers: {
-        "Content-Type": "application/json",
+        headers: {
+          "Content-Type": "application/json",
+        },
+
+        body: JSON.stringify({
+          name,
+          attendance,
+          guestsCount,
+        }),
       },
-
-      body: JSON.stringify({
-        name,
-        attendance,
-        guestsCount,
-      }),
-    });
+    );
 
     const data = await response.json();
 
@@ -136,18 +139,21 @@ messageForm.addEventListener("submit", async (event) => {
   const message = document.getElementById("messageText").value.trim();
 
   try {
-    const response = await fetch("http://localhost:3000/api/messages", {
-      method: "POST",
+    const response = await fetch(
+      "https://engagement-invitation-production.up.railway.app/api/messages",
+      {
+        method: "POST",
 
-      headers: {
-        "Content-Type": "application/json",
+        headers: {
+          "Content-Type": "application/json",
+        },
+
+        body: JSON.stringify({
+          name,
+          message,
+        }),
       },
-
-      body: JSON.stringify({
-        name,
-        message,
-      }),
-    });
+    );
 
     const data = await response.json();
 
@@ -175,7 +181,7 @@ messageForm.addEventListener("submit", async (event) => {
 // Get all messages
 async function loadMessages() {
   try {
-    const response = await fetch("http://localhost:3000/api/messages");
+    const response = await fetch("https://engagement-invitation-production.up.railway.app/api/messages");
 
     const messages = await response.json();
 
